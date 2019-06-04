@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'even-component',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./even-component.component.css']
 })
 export class EvenComponentComponent implements OnInit {
-
+  @Input() number:number;
   constructor() { }
 
   ngOnInit() {
